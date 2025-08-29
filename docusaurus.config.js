@@ -11,10 +11,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Refract Documentation',
-  tagline: 'A reactive UI framework for clarity',
-  favicon: 'img/favicon.ico',
+  tagline: 'Design reactive UIs with precision and predictability',
+  favicon: 'img/refract-favicon.png',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  // Future flags, see https://docusaurus.io/docs/apitu/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
@@ -47,6 +47,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs',
+          routeBasePath: '/', // Let docs load under /docs instead of root
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -81,21 +83,33 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Refract',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Refract Logo',
+          src: 'img/refract-favicon.png',
+          href: '/',
         },
         items: [
+           {
+            type: 'docSidebar',
+            sidebarId: 'projectsidebar',
+         position: 'left',
+            label: 'Understanding Refract',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Working with Refract',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+             to: '/Blog',
+             label: 'Blog',
+             position: 'left'
+           },
+          
+                    {
+            href: 'https://github.com/Gagan-TW/my_website.git',
             label: 'GitHub',
             position: 'right',
           },
@@ -105,46 +119,41 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Resources',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Getting Started',
+                to: '/docs/getting-started',
+              },
+              {
+                label: 'API',
+                to: '/docs/api/api_index',
               },
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
+              
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/Tn52NUsK',
               },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
+              
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
+                {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Gagan-TW/my_website.git',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `© 2025 Gagandeep Kaur. This Refract documentation site is part of the Technical Writing Mentorship Program (Product Documentation Cohort). Built with Docusaurus.
+.`,
       },
       prism: {
         theme: prismThemes.github,
@@ -152,5 +161,5 @@ const config = {
       },
     }),
 };
-
+plugins: ['@docusaurus/plugin-content-blog']
 export default config;

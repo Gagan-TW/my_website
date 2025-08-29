@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Built for Simplicity',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Refract helps you build reactive UIs from the ground up. It is easy to install,
+        simple to use, and designed for fast project setup and seamless development.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Focus on Clarity',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        With Refract, you can focus on building clean, modular components. Let the framework
+        handle the complexity while you stay productive in a well-structured codebase.
       </>
     ),
   },
   {
     title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Refract is built on top of React. It supports composable UI patterns, lens-based
+        state management, and flexible rendering options—all with the power of the React ecosystem.
       </>
     ),
   },
