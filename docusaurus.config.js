@@ -92,13 +92,13 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'projectsidebar',
             position: 'left',
-            label: 'Understanding Refract',
+            label: 'Overview',
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Working with Refract',
+            label: 'Tutorials',
           },
           {
              to: '/blog',
@@ -120,8 +120,8 @@ const config = {
             title: 'Resources',
             items: [
               {
-                label: 'Introduction',
-                to: '/introduction',
+                label: 'Getting Started',
+                to: '/getting-started',
               },
             ],
           },

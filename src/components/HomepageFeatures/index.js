@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Built for Simplicity',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/simple.svg').default,
     description: (
       <>
         Refract helps you build reactive UIs from the ground up. It is easy to install,
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on Clarity',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/focus_image.svg').default,
     description: (
       <>
         With Refract, you can focus on building clean, modular components. Let the framework
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/react.svg').default,
     description: (
       <>
         Refract is built on top of React. It supports composable UI patterns, lens-based
