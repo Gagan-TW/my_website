@@ -9,7 +9,6 @@ In Refract, the user interface is built using **components**. Components are reu
 
 Each component in Refract is defined using the `createComponent()` function and returns JSX-like syntax.
 
----
 
 ## What is a component?
 
@@ -20,7 +19,6 @@ A component is:
 - Must start with a **capital letter**
 - Returns JSX-like code (similar to HTML)
 
----
 
 ## Example: Your first component
 

@@ -20,13 +20,12 @@ Think of optics as a camera lens for your state—you choose exactly what part o
 ```js
 const userLens = lens(['user', 'profile']);
 const userName = view(userLens, appState);
-````
+```
 
 No more prop drilling or overuse of `useContext`.
 
----
 
-## ⚛️ Why Optics Are Better Than Traditional State Management
+## Why Optics Are Better Than Traditional State Management
 
 Traditional frameworks often rely on reducers, state lifting, or context propagation. These work—but can get bloated fast.
 
@@ -36,8 +35,6 @@ Traditional frameworks often rely on reducers, state lifting, or context propaga
 * ✅ Greater reuse of logic via optics composition
 * ✅ Clear separation of data access and rendering
 * ✅ A declarative style for modeling your app
-
----
 
 ## ✨ Optics in Action
 

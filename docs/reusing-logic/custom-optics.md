@@ -9,7 +9,6 @@ slug: /reusing-logic/custom-optics
 
 Refract allows you to create **custom optics**—reusable functions that simplify access to specific parts of your application state. These can help you avoid repetitive lens composition and encapsulate logic specific to your app.
 
----
 
 ## Why Create Custom Optics?
 
@@ -18,7 +17,6 @@ Custom optics are useful when:
 - You want to abstract state paths behind meaningful names
 - You need cleaner and more maintainable state logic
 
----
 
 ## Basic Custom Lens
 
@@ -34,7 +32,6 @@ export const userNameLens = compose(userLens, lensProp('name'));
 export const userAgeLens = compose(userLens, lensProp('age'));
 ````
 
----
 
 ## Using Custom Optics in a Component
 
@@ -47,8 +44,6 @@ function UserNameDisplay({ state }) {
   return <div>User Name: {name}</div>;
 }
 ```
-
----
 
 ## Editable Example
 
@@ -65,7 +60,6 @@ function UserEditor({ state, setState }) {
 }
 ```
 
----
 
 ## Composing Deeper Paths
 
@@ -78,7 +72,6 @@ const firstPostTitleLens = compose(postsLens, lensIndex(0), lensProp('title'));
 
 This reads and updates the title of the first post in an array immutably.
 
----
 
 ## Best Practices
 

@@ -30,7 +30,7 @@ const config = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -52,8 +52,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+       
         },
         blog: {
           showReadingTime: true,
@@ -63,8 +62,7 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+         
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -93,7 +91,7 @@ const config = {
            {
             type: 'docSidebar',
             sidebarId: 'projectsidebar',
-         position: 'left',
+            position: 'left',
             label: 'Understanding Refract',
           },
           {
@@ -103,7 +101,7 @@ const config = {
             label: 'Working with Refract',
           },
           {
-             to: '/Blog',
+             to: '/blog',
              label: 'Blog',
              position: 'left'
            },
@@ -122,12 +120,8 @@ const config = {
             title: 'Resources',
             items: [
               {
-                label: 'Getting Started',
-                to: '/docs/getting-started',
-              },
-              {
-                label: 'API',
-                to: '/docs/api/api_index',
+                label: 'Introduction',
+                to: '/introduction',
               },
             ],
           },

@@ -12,8 +12,6 @@ Refract enables developers to build **reactive user interfaces** by combining th
 
 Rendering is the process of displaying elements and components on the screen based on your application’s state and logic. In Refract, rendering UI is declarative—you describe **what** you want, and Refract handles **how** to update it.
 
----
-
 ## Basic JSX-Based Rendering
 
 You can start rendering elements using simple JSX:
@@ -31,7 +29,6 @@ Refract components can return:
 * Fragments (`<>...</>`)
 * Conditional and list-rendered blocks
 
----
 
 ## Combining Logic with UI
 
@@ -49,7 +46,6 @@ function Greeting({ isLoggedIn }) {
 
 This declarative approach makes UIs predictable and maintainable.
 
----
 
 ## Rendering Nested Components
 
@@ -74,7 +70,6 @@ function App() {
 }
 ```
 
----
 
 ## Conditional UI Rendering
 
@@ -91,8 +86,6 @@ function Notification({ hasUnread }) {
 ```
 
 For more, see [Conditional Rendering](./conditional-rendering.md).
-
----
 
 ## Rendering Dynamic Lists
 
@@ -114,8 +107,6 @@ function ItemList() {
 
 For detailed explanation, refer to [Rendering Lists](./rendering-lists.md).
 
----
-
 ## Keeping UI Organized
 
 Organize your UI into:
@@ -126,7 +117,7 @@ Organize your UI into:
 
 This modularity promotes reuse and simplifies testing.
 
----
+
 
 ## Summary
 

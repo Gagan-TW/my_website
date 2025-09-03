@@ -15,7 +15,6 @@ Optics make it easier to:
 - Perform updates immutably
 - Improve modularity and reusability
 
----
 
 ## What Are Optics?
 
@@ -29,7 +28,6 @@ const nameLens = lensProp('name');
 const userNameLens = compose(userLens, nameLens);
 ````
 
----
 
 ## Viewing State
 
@@ -39,8 +37,6 @@ To read data with optics:
 const state = { user: { name: 'Gagan', age: 30 } };
 const name = view(userNameLens, state); // Output: 'Gagan'
 ```
-
----
 
 ## Updating State
 
@@ -53,7 +49,6 @@ const updatedState = set(userNameLens, 'Deep', state);
 
 This operation does not mutate the original object.
 
----
 
 ## Example in a Component
 
@@ -73,7 +68,6 @@ function UpdateName({ state, setState }) {
 }
 ```
 
----
 
 ## Benefits
 

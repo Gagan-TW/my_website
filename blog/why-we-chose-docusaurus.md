@@ -40,4 +40,4 @@ In future blog posts, we’ll cover:
 - How to contribute to Refract docs
 - How we version our documentation
 
-Stay tuned—and check out our [Getting Started Guide](/docs/getting-started)!
+Stay tuned—and check out our [Getting Started Guide](/docs/getting-started)

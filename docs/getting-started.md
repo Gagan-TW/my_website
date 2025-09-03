@@ -32,9 +32,5 @@ function App() {
 export default App;
 ```
 ## Next Steps
-Now that Refract is installed, explore the core concepts and components:
-- [Introduction](./introduction.md)
-- [Concepts](./concepts.md)
-- [Managing State](./managing-state.md)
-
+Now that Refract is installed, explore the core concepts and components of Refract.
 

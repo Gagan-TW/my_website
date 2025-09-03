@@ -1,9 +1,3 @@
-
----
-
-### ✅ `useOptic.md`
-
-```markdown
 ---
 title: useOptic
 sidebar_label: useOptic
